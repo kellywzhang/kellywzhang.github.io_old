@@ -1,0 +1,18 @@
+# Site settings
+title: Kelly W. Zhang
+baseurl: ""
+url: "http://kellywzhang.github.io"
+links: "hoo"
+
+# Build settings
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Third-party services
+# just leave blank to disable it
+google_analytics: 
+disqus_shortname: 
+
+# Utils
+mathjax: true

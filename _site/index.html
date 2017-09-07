@@ -1,7 +1,27 @@
----
-layout: default
----
-<div class="home">
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kelly W. Zhang</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Kelly W. Zhang" href="http://localhost:4000/feed.xml">
+</head>
+
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="/">Kelly W. Zhang</a>
+      <!--
+      <br />
+      kz918 at nyu dot edu
+      <br />
+      <a href="https://github.com/kellywzhang/">GitHub</a>
+      -->  
+    </header>
+    <div class="page-content">
+      <div class="home">
     <section>
         <h2 class="smallcap">about</h2>
         <p>I am in my final year of undergraduate study at New York University. I study computer science and am particularly interested in machine learning and natural language understanding. I am very fortunate to be a member of the <a href="https://wp.nyu.edu/ml2/"><b>Machine Learning for Language Lab (ML²)</b></a> at <a href="https://wp.nyu.edu/cilvr/">CILVR</a> and to be advised by <a href="https://www.nyu.edu/projects/bowman/">Sam Bowman</a>.</p>
@@ -73,8 +93,8 @@ layout: default
 	<section>
         <h2 class="smallcap">personal</h2>
 	    <ul style="list-style-type:disc">
-            <li><a href={{ "/timeline" }}>timeline</a></li>
-            <li><a href={{ "/photo" }}>photo</a></li>
+            <li><a href=/timeline>timeline</a></li>
+            <li><a href=/photo>photo</a></li>
         </ul>
     </section>
 	
@@ -82,16 +102,29 @@ layout: default
     <section>
 		<h2 class="smallcap">posts</h2>
 		<ul class="post-list">
-			{% for post in site.posts limit:5 %}
+			
 			<li>
-				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<time datetime="2015-11-15T19:00:00-05:00">Nov 16, 2015</time>
+				<a href="/hide/2015/11/16/styles-for-slim/">Styles for slim</a>
 			</li>
-			{% endfor %}
+			
+			<li>
+				<time datetime="2015-11-15T06:02:34-05:00">Nov 15, 2015</time>
+				<a href="/hide/2015/11/15/welcome-to-jekyll/">Welcome to Jekyll!</a>
+			</li>
+			
 		</ul>
-		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
+		<p><a href="/archives/">view more...</a></p>
 	</section>
 -->
 </div>
 
 <center><font size="2">This site is <a href="https://github.com/syaning/slim">slim</a>.</font></center>
+
+    </div>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  </body>
+</html>
