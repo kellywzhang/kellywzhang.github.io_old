@@ -3,7 +3,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 100 16px/1.5 "Helvetica", Helvetica, FangSong, STFangsong, sans-serif; color: #111; background-color: #fff; }
+body { font: 400 16px/1.5 "Cutive Mono", "Courier New", "Helvetica Neue", Helvetica, FangSong, STFangsong, sans-serif; color: #111; background-color: #fff; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, table { margin-bottom: 1rem; }
@@ -22,7 +22,7 @@ ul, ol { margin-left: 2rem; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 100; }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }
