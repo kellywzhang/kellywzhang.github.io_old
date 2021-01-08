@@ -3,6 +3,8 @@ Setting up site locally with jekyll: https://help.github.com/articles/setting-up
 
 bundle exec jekyll serve
 
+Updating gem files: 
+bundle update
 
 # slim
 
