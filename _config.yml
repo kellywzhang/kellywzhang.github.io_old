@@ -1,7 +1,7 @@
 # Site settings
-title: Kelly W. Zhang
-baseurl: ""
-url: "http://kellywzhang.github.io"
+title: slim
+baseurl: "/slim"
+url: "https://syaning.github.io"
 
 # Build settings
 kramdown:
@@ -11,7 +11,3 @@ permalink: pretty
 # Third-party services
 # just leave blank to disable it
 google_analytics: 
-disqus_shortname: 
-
-# Utils
-mathjax: true
