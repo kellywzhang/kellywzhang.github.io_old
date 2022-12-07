@@ -3,15 +3,28 @@
   {% include head.html %}
   <body>
     <header class="site-header">
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <center>
+          <hr style="height:1px;border:none;color:#D3D3D3;background-color:#D3D3D3;width:570px;margin:13px" >
+        <!--
+            <b><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></b>
+        -->
       <!--
       <br />
       kz918 at nyu dot edu
       <br />
       <a href="https://github.com/kellywzhang/">GitHub</a>
-      -->  
+      --> 
+          <p style="font-size:22px;">
+          <b><a href="{{ "/" | prepend: site.baseurl }}">Home</a> &nbsp;/&nbsp;
+            <a href="{{ "/research/" | prepend: site.baseurl }}">Research</a> &nbsp;/&nbsp;
+            <a href="{{ "/talks/" | prepend: site.baseurl }}">Talks</a> &nbsp;/&nbsp;
+            <a href="{{ "/honors-service-teaching/" | prepend: site.baseurl }}">Honors, Service & Teaching</a></b>
+          </p>
+          <hr style="height:1px;border:none;color:#D3D3D3;background-color:#D3D3D3;width:570px;margin:0px;padding:0" >
+      </center>
+      <br />
     </header>
-    <div class="page-content">
+    <div class="page-content" style="padding:0">
       {{ content }}
     </div>
     {% include ga.html %}
