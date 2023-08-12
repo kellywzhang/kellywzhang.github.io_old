@@ -5,7 +5,7 @@
 
 
 // Our variables
-$base-font-family: "Avenir", Helvetica, FangSong, STFangsong, sans-serif; //"Cutive Mono" //"Courier New" //"Helvetica Neue"
+$base-font-family: "Helvetica", Helvetica, FangSong, STFangsong, sans-serif; //"Cutive Mono" //"Courier New" //"Helvetica Neue"
 $code-font-family: "Courier New", Consolas, monopace, FangSong, STFangsong;
 $base-font-size:   18px; //16px
 $base-font-weight: 100; //400
@@ -38,13 +38,6 @@ $on-laptop:        800px;
 .column {
   float: left;
   width: 30%;
-}
-
-h1 {
-  font-size: 30px;
-}
-h2 {
-  font-size: 22px;
 }
 
 
