@@ -13,3 +13,6 @@ slim is just a slim jekyll theme. [Demo](https://syaning.github.io/slim/).
 ### License
 
 MIT
+
+
+Git command to remove all: git ls-files --deleted -z | xargs -0 git rm
