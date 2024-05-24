@@ -1,12 +1,5 @@
 # al-folio
 
-template website: https://github.com/alshedivat/al-folio/tree/master
-
-docker compose pull
-docker compose -f docker-compose-slim.yml up
-docker compose up
-
-
 <div align="center">
 
 [![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
