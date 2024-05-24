@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://kellywzhang.github.io/sitemap.xml
