@@ -1,0 +1,178 @@
+---
+---
+
+@article{trella2024monitoring,
+  bibtex_show={true},
+  title={Monitoring Fidelity of Online Reinforcement Learning Algorithms in Clinical Trials},
+  author={Trella, Anna L and Zhang, Kelly W and Nahum-Shani, Inbal and Shetty, Vivek and Yan, Iris and Doshi-Velez, Finale and Murphy, Susan A},
+  journal={Preprint},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2402.17003},
+  abstract={Online reinforcement learning (RL) algorithms offer great potential for personalizing treatment for participants in clinical trials. However, deploying an online, autonomous algorithm in the high-stakes healthcare setting makes quality control and data quality especially difficult to achieve. This paper proposes algorithm fidelity as a critical requirement for deploying online RL algorithms in clinical trials. It emphasizes the responsibility of the algorithm to (1) safeguard participants and (2) preserve the scientific utility of the data for post-trial analyses. We also present a framework for pre-deployment planning and real-time monitoring to help algorithm developers and clinical researchers ensure algorithm fidelity. To illustrate our framework's practical application, we present real-world examples from the Oralytics clinical trial. Since Spring 2023, this trial successfully deployed an autonomous, online RL algorithm to personalize behavioral interventions for participants at risk for dental disease.}
+}
+
+@article{xu2024fallacy,
+  bibtex_show={true},
+  title={Did we personalize? assessing personalization by an online reinforcement learning algorithm using resampling},
+  author={Xu, Ziping and Zhang, Kelly W, and Murphy, Susan},
+  journal={Preprint},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2403.10946},
+  abstract={In the realm of Reinforcement Learning (RL), online RL is often conceptualized as an optimization problem, where an algorithm interacts with an unknown environment to minimize cumulative regret. In a stationary setting, strong theoretical guarantees, like a sublinear (T‾‾√) regret bound, can be obtained, which typically implies the convergence to an optimal policy and the cessation of exploration. However, these theoretical setups often oversimplify the complexities encountered in real-world RL implementations, where tasks arrive sequentially with substantial changes between tasks and the algorithm may not be allowed to adaptively learn within certain tasks. We study the changes beyond the outcome distributions, encompassing changes in the reward designs (mappings from outcomes to rewards) and the permissible policy spaces. Our results reveal the fallacy of myopically minimizing regret within each task: obtaining optimal regret rates in the early tasks may lead to worse rates in the subsequent ones, even when the outcome distributions stay the same. To realize the optimal cumulative regret bound across all the tasks, the algorithm has to overly explore in the earlier tasks. This theoretical insight is practically significant, suggesting that due to unanticipated changes (e.g., rapid technological development or human-in-the-loop involvement) between tasks, the algorithm needs to explore more than it would in the usual stationary setting within each task. Such implication resonates with the common practice of using clipped policies in mobile health clinical trials and maintaining a fixed rate of ϵ-greedy exploration in robotic learning.}
+}
+
+@article{ghosh2024did,
+  bibtex_show={true},
+  title={Did we personalize? assessing personalization by an online reinforcement learning algorithm using resampling},
+  author={Ghosh, Susobhan and Kim, Raphael and Chhabria, Prasidh and Dwivedi, Raaz and Klasnja, Predrag and Liao, Peng and Zhang, Kelly W and Murphy, Susan},
+  journal={Machine Learning (Special Issue on Reinforcement Learning for Real Life)},
+  pages={1--37},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2304.05365},
+  publisher={Springer},
+  abstract={There is a growing interest in using reinforcement learning (RL) to personalize sequences of treatments in digital health to support users in adopting healthier behaviors. Such sequential decision-making problems involve decisions about when to treat and how to treat based on the user's context (e.g., prior activity level, location, etc.). Online RL is a promising data-driven approach for this problem as it learns based on each user's historical responses and uses that knowledge to personalize these decisions. However, to decide whether the RL algorithm should be included in an ``optimized'' intervention for real-world deployment, we must assess the data evidence indicating that the RL algorithm is actually personalizing the treatments to its users. Due to the stochasticity in the RL algorithm, one may get a false impression that it is learning in certain states and using this learning to provide specific treatments. We use a working definition of personalization and introduce a resampling-based methodology for investigating whether the personalization exhibited by the RL algorithm is an artifact of the RL algorithm stochasticity. We illustrate our methodology with a case study by analyzing the data from a physical activity clinical trial called HeartSteps, which included the use of an online RL algorithm. We demonstrate how our approach enhances data-driven truth-in-advertising of algorithm personalization both across all users as well as within specific users in the study.}
+}
+
+@article{nahum2024optimizing,
+  bibtex_show={true},
+  title={A mobile health intervention for emerging adults with regular cannabis use: A micro-randomized pilot trial design protocol},
+  author={Coughlin, Lara N. and Campbell, Maya and  Wheeler, Tiffany and  Rodriguez, Chavez and Florimbio, Autumn and Ghosh, Susobhan and Guo, Yongyi and Hung, Pei-Yao and Zhang, Kelly W and Zimmerman, Lauren and Bonar, Erin and Walton, Maureen and Murphy, Susan and Nahum-Shani, Inbal},
+  journal={Preprint},
+  year={2024}
+}
+
+@article{nahum2024optimizing,
+  bibtex_show={true},
+  title={Optimizing an adaptive digital oral health intervention for promoting oral self-care behaviors: Micro-randomized trial protocol},
+  author={Nahum-Shani, Inbal and Greer, Zara M and Trella, Anna L and Zhang, Kelly W and Carpenter, Stephanie M and Ruenger, Dennis and Elashoff, David and Murphy, Susan A and Shetty, Vivek},
+  journal={Contemporary Clinical Trials},
+  volume={139},
+  pdf={https://www.sciencedirect.com/science/article/pii/S1551714424000387},
+  pages={107464},
+  year={2024},
+  publisher={Elsevier},
+  pubmed={https://pubmed.ncbi.nlm.nih.gov/38307224/},
+  clinicaltrials.gov={https://clinicaltrials.gov/study/NCT05624489},
+  abstract={Dental disease continues to be one of the most prevalent chronic diseases in the United States. Although oral self-care behaviors (OSCB), involving systematic twice-a-day tooth brushing, can prevent dental disease, this basic behavior is not sufficiently practiced. Recent advances in digital technology offer tremendous potential for promoting OSCB by delivering Just-In-Time Adaptive Interventions (JITAIs)- interventions that leverage dynamic information about the person's state and context to effectively prompt them to engage in a desired behavior in real-time, real-world settings. However, limited research attention has been given to systematically investigating how to best prompt individuals to engage in OSCB in daily life, and under what conditions prompting would be most beneficial. This paper describes the protocol for a Micro-Randomized Trial (MRT) to inform the development of a JITAI for promoting ideal OSCB, namely, brushing twice daily, for two minutes each time, in all four dental quadrants (i.e., 2x2x4). Sensors within an electric toothbrush (eBrush) will be used to track OSCB and a matching mobile app (Oralytics) will deliver on-demand feedback and educational information. The MRT will micro-randomize participants twice daily (morning and evening) to either (a) a prompt (push notification) containing one of several theoretically grounded engagement strategies or (b) no prompt. The goal is to investigate whether, what type of, and under what conditions prompting increases engagement in ideal OSCB. The results will build the empirical foundation necessary to develop an optimized JITAI that will be evaluated relative to a suitable control in a future randomized controlled trial.}
+}
+
+@article{zhang2023thesis,
+  bibtex_show={true},
+  title={Statistical Inference for Adaptive Experimentation},
+  author={Zhang, Kelly W},
+  journal={Thesis},
+  pdf={https://www.proquest.com/docview/2821591587?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses},
+  year={2023},
+  abstract={Online reinforcement learning (RL) algorithms are a very promising tool for personalizing decision-making for digital interventions, e.g., in mobile health, online education, and public policy. Online RL algorithms are increasingly being used in these applications since they are able to use previously collected data to continually learn and improve future decision-making. After deploying online RL algorithms though, it is critical to be able to answer scientific questions like: Did one type of teaching strategy lead to better student outcomes? In which contexts is a digital health intervention effective? The answers to these questions inform decisions about whether to roll out or how to improve a given intervention. Constructing confidence intervals for treatment effects using normal approximations is a natural approach to address these questions. However, classical statistical inference approaches for i.i.d. data fail to provide valid confidence intervals on data collected with online RL algorithms. Since online RL algorithms use previously collected data to inform future treatment decisions, they induce dependence in the collected data. This induced dependence can cause standard statistical inference approaches for i.i.d. data to be invalid on this data type. This thesis provides an understanding of the reasons behind the failure of classical methods in these settings. Moreover, we introduce a variety of alternative statistical inference approaches that are applicable to data collected by online RL algorithms.}      
+}
+
+@article{trella2023reward,
+  bibtex_show={true},
+  title={Reward design for an online reinforcement learning algorithm supporting oral self-care},
+  author={Trella, Anna L and Zhang, Kelly W and Nahum-Shani, Inbal and Shetty, Vivek and Doshi-Velez, Finale and Murphy, Susan A},
+  journal={AAAI Conference on Artificial Intelligence},
+  volume={37},
+  number={13},
+  pages={15724--15730},
+  pdf={https://ojs.aaai.org/index.php/AAAI/article/view/26866},
+  code={https://github.com/StatisticalReinforcementLearningLab/oralytics_reward_design},
+  year={2023},
+  abstract={Dental disease is one of the most common chronic diseases despite being largely preventable. However, professional advice on optimal oral hygiene practices is often forgotten or abandoned by patients. Therefore patients may benefit from timely and personalized encouragement to engage in oral self-care behaviors. In this paper, we develop an online reinforcement learning (RL) algorithm for use in optimizing the delivery of mobile-based prompts to encourage oral hygiene behaviors. One of the main challenges in developing such an algorithm is ensuring that the algorithm considers the impact of the current action on the effectiveness of future actions (i.e., delayed effects), especially when the algorithm has been made simple in order to run stably and autonomously in a constrained, real-world setting (i.e., highly noisy, sparse data). We address this challenge by designing a quality reward which maximizes the desired health outcome (i.e., high-quality brushing) while minimizing user burden. We also highlight a procedure for optimizing the hyperparameters of the reward by building a simulation environment test bed and evaluating candidates using the test bed. The RL algorithm discussed in this paper will be deployed in Oralytics, an oral self-care app that provides behavioral strategies to boost patient engagement in oral hygiene practices.},
+}
+
+@article{zhang2023statistical,
+  bibtex_show={true},
+  title={Statistical Inference after Adaptive Sampling for Longitudinal Data},
+  author={Zhang, Kelly W and Janson, Lucas and Murphy, Susan A},
+  journal={Preprint},
+  year={2023},
+  pdf={https://arxiv.org/pdf/2202.07098},
+  abstract={Online reinforcement learning and other adaptive sampling algorithms are increasingly used in digital intervention experiments to optimize treatment delivery for users over time. In this work, we focus on longitudinal user data collected by a large class of adaptive sampling algorithms that are designed to optimize treatment decisions online using accruing data from multiple users. Combining or "pooling" data across users allows adaptive sampling algorithms to potentially learn faster. However, by pooling, these algorithms induce dependence between the sampled user data trajectories; we show that this can cause standard variance estimators for i.i.d. data to underestimate the true variance of common estimators on this data type. We develop novel methods to perform a variety of statistical analyses on such adaptively sampled data via Z-estimation. Specifically, we introduce the \textit{adaptive} sandwich variance estimator, a corrected sandwich estimator that leads to consistent variance estimates under adaptive sampling. Additionally, to prove our results we develop novel theoretical tools for empirical processes on non-i.i.d., adaptively sampled longitudinal data which may be of independent interest. This work is motivated by our efforts in designing experiments in which online reinforcement learning algorithms optimize treatment decisions, yet statistical inference is essential for conducting analyses after experiments conclude.}
+}
+
+@Article{trella2022designing,
+  bibtex_show={true},
+AUTHOR = {Trella, Anna L. and Zhang, Kelly W. and Nahum-Shani, Inbal and Shetty, Vivek and Doshi-Velez, Finale and Murphy, Susan A.},
+TITLE = {Designing Reinforcement Learning Algorithms for Digital Interventions: Pre-Implementation Guidelines},
+JOURNAL = {Algorithms (Special Issue Algorithms in Decision Support Systems); 
+    Preliminary version at RLDM 2022 (Multi-disciplinary Conference on RL and Decision Making); selected for an oral},
+VOLUME = {15},
+YEAR = {2022},
+NUMBER = {8},
+pdf={https://arxiv.org/pdf/2206.03944},
+URL = {https://www.mdpi.com/1999-4893/15/8/255},
+ISSN = {1999-4893},
+ABSTRACT = {Online reinforcement learning (RL) algorithms are increasingly used to personalize digital interventions in the fields of mobile health and online education. Common challenges in designing and testing an RL algorithm in these settings include ensuring the RL algorithm can learn and run stably under real-time constraints, and accounting for the complexity of the environment, e.g., a lack of accurate mechanistic models for the user dynamics. To guide how one can tackle these challenges, we extend the PCS (predictability, computability, stability) framework, a data science framework that incorporates best practices from machine learning and statistics in supervised learning to the design of RL algorithms for the digital interventions setting. Furthermore, we provide guidelines on how to design simulation environments, a crucial tool for evaluating RL candidate algorithms using the PCS framework. We show how we used the PCS framework to design an RL algorithm for Oralytics, a mobile health study aiming to improve users’ tooth-brushing behaviors through the personalized delivery of intervention messages. Oralytics will go into the field in late 2022.},
+DOI = {10.3390/a15080255}
+}
+
+@article{zhang2021mestimator,
+ bibtex_show={true},
+ author = {Zhang, Kelly W and Janson, Lucas and Murphy, Susan},
+ journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {7460--7471},
+ publisher = {Curran Associates, Inc.},
+ title = {Statistical Inference with M-Estimators on Adaptively Collected Data},
+ pdf = {https://arxiv.org/pdf/2104.14074},
+ video = {https://www.youtube.com/watch?v=jflR7KOrqNA&t=2s},
+ code = {https://github.com/kellywzhang/adaptively_weighted_Mestimation},
+ volume = {34},
+ year = {2021},
+ abstract = {Bandit algorithms are increasingly used in real-world sequential decision-making problems. Associated with this is an increased desire to be able to use the resulting datasets to answer scientific questions like: Did one type of ad lead to more purchases? In which contexts is a mobile health intervention effective? However, classical statistical approaches fail to provide valid confidence intervals when used with data collected with bandit algorithms. Alternative methods have recently been developed for simple models (e.g., comparison of means). Yet there is a lack of general methods for conducting statistical inference using more complex models on data collected with (contextual) bandit algorithms; for example, current methods cannot be used for valid inference on parameters in a logistic regression model for a binary reward. In this work, we develop theory justifying the use of M-estimators -- which includes estimators based on empirical risk minimization as well as maximum likelihood -- on data collected with adaptive algorithms, including (contextual) bandit algorithms. Specifically, we show that M-estimators, modified with particular adaptive weights, can be used to construct asymptotically valid confidence regions for a variety of inferential targets.},
+  selected={true}
+}
+
+@article{zhang2020inference,
+ bibtex_show={true},
+ author = {Zhang, Kelly W and Janson, Lucas and Murphy, Susan},
+ journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {9818--9829},
+ publisher = {Curran Associates, Inc.},
+ title = {Inference for Batched Bandits},
+ pdf = {https://arxiv.org/pdf/2002.03217},
+ volume = {33},
+ year = {2020},
+ video = {https://www.youtube.com/watch?v=iLJ1hC5k-IQ},
+ code = {https://github.com/kellywzhang/inference_batched_bandits},
+ abstract={As bandit algorithms are increasingly utilized in scientific studies and industrial applications, there is an associated increasing need for reliable inference methods based on the resulting adaptively-collected data. In this work, we develop methods for inference on data collected in batches using a bandit algorithm. We first prove that the ordinary least squares estimator (OLS), which is asymptotically normal on independently sampled data, is not asymptotically normal on data collected using standard bandit algorithms when there is no unique optimal arm. This asymptotic non-normality result implies that the naive assumption that the OLS estimator is approximately normal can lead to Type-1 error inflation and confidence intervals with below-nominal coverage probabilities. Second, we introduce the Batched OLS estimator (BOLS) that we prove is (1) asymptotically normal on data collected from both multi-arm and contextual bandits and (2) robust to non-stationarity in the baseline reward.},
+  selected={true}
+}
+
+
+
+@article{zhang2022bayesian,
+  bibtex_show={true},
+  title={A bayesian approach to learning bandit structure in markov decision processes},
+  author={Zhang, Kelly W and Gottesman, Omer and Doshi-Velez, Finale},
+  pdf={https://arxiv.org/pdf/2208.00250},
+  journal={Challenges of Real-World Reinforcement Learning 2020 (NeurIPS Workshop)},
+  year={2020},
+  video={https://www.youtube.com/watch?v=qwslWkKrCRU&ab_channel=SusanMurphyLab},
+  abstract={In the reinforcement learning literature, there are many algorithms developed for either Contextual Bandit (CB) or Markov Decision Processes (MDP) environments. However, when deploying reinforcement learning algorithms in the real world, even with domain expertise, it is often difficult to know whether it is appropriate to treat a sequential decision making problem as a CB or an MDP. In other words, do actions affect future states, or only the immediate rewards? Making the wrong assumption regarding the nature of the environment can lead to inefficient learning, or even prevent the algorithm from ever learning an optimal policy, even with infinite data. In this work we develop an online algorithm that uses a Bayesian hypothesis testing approach to learn the nature of the environment. Our algorithm allows practitioners to incorporate prior knowledge about whether the environment is that of a CB or an MDP, and effectively interpolate between classical CB and MDP-based algorithms to mitigate against the effects of misspecifying the environment. We perform simulations and demonstrate that in CB settings our algorithm achieves lower regret than MDP-based algorithms, while in non-bandit MDP settings our algorithm is able to learn the optimal policy, often achieving comparable regret to MDP-based algorithms.}
+}
+
+@article{zhang2018language,
+  bibtex_show={true},
+  title={Language modeling teaches you more syntax than translation does: Lessons learned through auxiliary task analysis},
+  author={Zhang, Kelly W and Bowman, Samuel R},
+  journal={BlackboxNLP 2018 (EMNLP Workshop)},
+  year={2018},
+  pdf= {https://arxiv.org/pdf/1809.10040},
+  abstract={Recent work using auxiliary prediction task classifiers to investigate the properties of LSTM representations has begun to shed light on why pretrained representations, like ELMo (Peters et al., 2018) and CoVe (McCann et al., 2017), are so beneficial for neural language understanding models. We still, though, do not yet have a clear understanding of how the choice of pretraining objective affects the type of linguistic information that models learn. With this in mind, we compare four objectives—language modeling, translation, skip-thought, and autoencoding—on their ability to induce syntactic and part-of-speech information. We make a fair comparison between the tasks by holding constant the quantity and genre of the training data, as well as the LSTM architecture. We find that representations from language models consistently perform best on our syntactic auxiliary prediction tasks, even when trained on relatively small amounts of data. These results suggest that language modeling may be the best data-rich pretraining task for transfer learning applications requiring syntactic information. We also find that the representations from randomly-initialized, frozen LSTMs perform strikingly well on our syntactic auxiliary tasks, but this effect disappears when the amount of training data for the auxiliary tasks is reduced.},
+}
+
+@article{pmlr-v80-zhao18b,
+  bibtex_show={true},
+  title = 	 {Adversarially Regularized Autoencoders},
+  author =       {Zhao, Junbo (Jake) and Kim, Yoon and Zhang, Kelly and Rush, Alexander and LeCun, Yann},
+  journal = 	  {International Conference on Machine Learning (ICML)},
+  year = 	 {2018},
+  series = 	 {Proceedings of Machine Learning Research},
+  pdf = 	 {https://arxiv.org/pdf/1706.04223},
+  url = 	 {https://proceedings.mlr.press/v80/zhao18b.html},
+  abstract = 	 {Deep latent variable models, trained using variational autoencoders or generative adversarial networks, are now a key technique for representation learning of continuous structures. However, applying similar methods to discrete structures, such as text sequences or discretized images, has proven to be more challenging. In this work, we propose a more flexible method for training deep latent variable models of discrete structures. Our approach is based on the recently proposed Wasserstein Autoencoder (WAE) which formalizes adversarial autoencoders as an optimal transport problem. We first extend this framework to model discrete sequences, and then further explore different learned priors targeting a controllable representation. Unlike many other latent variable generative models for text, this adversarially regularized autoencoder (ARAE) allows us to generate fluent textual outputs as well as perform manipulations in the latent space to induce change in the output space. Finally we show that the latent representation can be trained to perform unaligned textual style transfer, giving improvements both in automatic measures and human evaluation.},
+}
+
+

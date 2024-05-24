@@ -1,112 +1,53 @@
-/**
- * Site header
- */
-.site-header {
-    border-bottom: 0px solid $grey-color-light;
-    /*border-bottom: 1px solid $grey-color-light;*/
-    text-align: center;
-    padding: 1rem 0;
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px;
+  }
 }
 
-.site-title {
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: -1px;
-    color: $grey-color-dark;
-
-    &,
-    &:hover {
-        text-decoration: none;
-    }
+body.fixed-top-nav {
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
 }
 
-
-
-/**
- * Page content
- */
-.page-content {
-    position: relative;
-    max-width: 48rem;
-    padding: $spacing-unit ($spacing-unit * 0.75);
-    margin: 0 auto;
-    box-sizing: border-box;
+body.sticky-bottom-footer {
+  // Remove padding below footer.
+  padding-bottom: 0;
 }
 
-
-
-/**
- * Pages
- */
-.home {
-    section + section {
-        margin-top: $spacing-unit;
-    }
+.container {
+  max-width: $max-content-width;
 }
 
-.smallcap {
-    text-transform: lowercase;
-    font-variant: small-caps;
-
-    &::first-letter {
-        text-transform: uppercase;
-    }
+// Profile
+.profile {
+  img {
+    width: 100%;
+  }
 }
 
-.post-list > li {
-    margin-bottom: $spacing-unit / 4;
+// TODO: redefine content layout.
 
-    @include media-query($on-palm) {
-        time {
-            display: block;
-            font-size: $small-font-size;
-        }
-    }
-}
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
 
+// TODO: redefine publications layout.
 
+/*****************************************************************************
+* Projects
+*****************************************************************************/
 
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 2rem;
-    letter-spacing: -1px;
-    line-height: 1;
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h1, h2, h3,
-    h4, h5, h6 {
-        margin-top: 2rem;
-    }
-
-    h1,
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    h5,
-    h6 {
-        font-size: 1rem;
-    }
-}
+// TODO: redefine projects layout.
